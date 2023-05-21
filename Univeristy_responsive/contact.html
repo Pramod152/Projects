@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>About US</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+    />
+
+    <!-- RemixIcons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS Link -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header  -->
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="./logo.png" alt="Logo" /></a>
+        <div class="nav-links" id="navlinks">
+          <i class="fa ri-close-line" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa ri-menu-line" onclick="showMenu()"></i>
+      </nav>
+      <h1>Contact Us</h1>
+    </section>
+
+    <!-- Contact Us -->
+    <section class="location">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14135.620815017533!2d85.34808396682197!3d27.658404475183655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb10aa668e649f%3A0x302b443de16adbd5!2sTikathali%2C%20Mahalaxmi!5e0!3m2!1sen!2snp!4v1682431662706!5m2!1sen!2snp"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+
+    <section class="contact-us">
+      <div class="row">
+        <div class="contact-col">
+          <div>
+            <i class="fa ri-home-4-line"></i>
+            <span>
+              <h5>XYZ Road, ABC Building</h5>
+              <p>Tikathali, Lalitpur, NP</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa ri-phone-line"></i>
+            <span>
+              <h5>+977 9861567345</h5>
+              <p>Monday to Saturday, 10AM to 6PM</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa ri-mail-line"></i>
+            <span>
+              <h5>info@pramod.com</h5>
+              <p>Email us your query</p>
+            </span>
+          </div>
+        </div>
+        <div class="contact-col">
+          <form action="form_handler.php" method="post">
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter Your Name"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter Email Address"
+              required
+            />
+            <input
+              type="text"
+              name="subject"
+              placeholder="Enter Your Subject"
+              required
+            />
+            <textarea
+              rows="8"
+              name="message"
+              placeholder="Message"
+              required
+            >
+            </textarea>
+            <button class="hero-btn red-btn" type="submit">
+              SEND MESSAGE
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+      <h4>About US</h4>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Laudantium cumque praesentium alias quasi, ex eius recusandae
+        ipsum voluptatibus blanditiis! <br />
+        Harum molestiae tempora corporis dolore neque unde aliquid
+        possimus omnis quo?
+      </p>
+      <div class="icons">
+        <i class="fa ri-facebook-fill"></i>
+        <i class="fa ri-twitter-fill"></i>
+        <i class="fa ri-instagram-fill"></i>
+        <i class="fa ri-linkedin-fill"></i>
+      </div>
+      <p>Made with <i class="ri-heart-fill"></i> by Easy Turorials</p>
+    </section>
+
+    <!-- Javascript for toggle menu -->
+    <script>
+      var navlinks = document.querySelector("#navlinks");
+
+      function showMenu() {
+        navlinks.style.right = "0"; // set the right property after a short delay
+      }
+      function hideMenu() {
+        navlinks.style.right = "-200px"; // immediately set the right property to start the transition
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>About US</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+    />
+
+    <!-- RemixIcons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS Link -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header  -->
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="./logo.png" alt="Logo" /></a>
+        <div class="nav-links" id="navlinks">
+          <i class="fa ri-close-line" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa ri-menu-line" onclick="showMenu()"></i>
+      </nav>
+      <h1>About Us</h1>
+    </section>
+
+    <!-- About Us Content -->
+    <section class="about-us">
+      <div class="row">
+        <div class="about-col">
+          <h1>We are the World's Largest University</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Beatae minima, nihil laudantium deserunt rem animi
+            exercitationem dicta maiores? Obcaecati nemo totam libero,
+            animi eveniet autem molestiae sed repudiandae quod! Aut.
+          </p>
+          <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+        </div>
+        <div class="about-col">
+          <img src="./about.jpg" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+      <h4>About US</h4>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Laudantium cumque praesentium alias quasi, ex eius recusandae
+        ipsum voluptatibus blanditiis! <br />
+        Harum molestiae tempora corporis dolore neque unde aliquid
+        possimus omnis quo?
+      </p>
+      <div class="icons">
+        <i class="fa ri-facebook-fill"></i>
+        <i class="fa ri-twitter-fill"></i>
+        <i class="fa ri-instagram-fill"></i>
+        <i class="fa ri-linkedin-fill"></i>
+      </div>
+      <p>Made with <i class="ri-heart-fill"></i> by Easy Turorials</p>
+    </section>
+
+    <!-- Javascript for toggle menu -->
+    <script>
+      var navlinks = document.querySelector("#navlinks");
+
+      function showMenu() {
+        navlinks.style.right = "0"; // set the right property after a short delay
+      }
+      function hideMenu() {
+        navlinks.style.right = "-200px"; // immediately set the right property to start the transition
+      }
+    </script>
+  </body>
+</html>

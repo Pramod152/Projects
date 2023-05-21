@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Our Courses</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+    />
+
+    <!-- RemixIcons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS Link -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header  -->
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="./logo.png" alt="Logo" /></a>
+        <div class="nav-links" id="navlinks">
+          <i class="fa ri-close-line" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa ri-menu-line" onclick="showMenu()"></i>
+      </nav>
+      <h1>Our Courses</h1>
+    </section>
+
+    <!-- Course -->
+    <section class="course">
+      <h1>Courses We Offer</h1>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+
+      <div class="row">
+        <div class="course-col">
+          <h3>Intermediate</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Molestiae consequatur adipisci laborum reprehenderit
+            debitis aspernatur eligendi quo dicta voluptatum
+            cupiditate.
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>Degree</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Molestiae consequatur adipisci laborum reprehenderit
+            debitis aspernatur eligendi quo dicta voluptatum
+            cupiditate.
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>Post Graduation</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Molestiae consequatur adipisci laborum reprehenderit
+            debitis aspernatur eligendi quo dicta voluptatum
+            cupiditate.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- facilities -->
+    <section class="facilities">
+      <h1>Our Facilities</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+      <div class="row">
+        <div class="facilities-col">
+          <img src="./library.png" />
+          <h3>World Class Library</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Labore, sit sunt tenetur repellendus nostrum quibusdam?
+          </p>
+        </div>
+        <div class="facilities-col">
+          <img src="./basketball.png" />
+          <h3>Largest Play Ground</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Labore, sit sunt tenetur repellendus nostrum quibusdam?
+          </p>
+        </div>
+        <div class="facilities-col">
+          <img src="./cafeteria.png" />
+          <h3>Tasty and Healthy Food</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Labore, sit sunt tenetur repellendus nostrum quibusdam?
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+      <h4>About US</h4>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Laudantium cumque praesentium alias quasi, ex eius recusandae
+        ipsum voluptatibus blanditiis! <br />
+        Harum molestiae tempora corporis dolore neque unde aliquid
+        possimus omnis quo?
+      </p>
+      <div class="icons">
+        <i class="fa ri-facebook-fill"></i>
+        <i class="fa ri-twitter-fill"></i>
+        <i class="fa ri-instagram-fill"></i>
+        <i class="fa ri-linkedin-fill"></i>
+      </div>
+      <p>Made with <i class="ri-heart-fill"></i> by Easy Turorials</p>
+    </section>
+
+    <!-- Javascript for toggle menu -->
+    <script>
+      var navlinks = document.querySelector("#navlinks");
+
+      function showMenu() {
+        navlinks.style.right = "0"; // set the right property after a short delay
+      }
+      function hideMenu() {
+        navlinks.style.right = "-200px"; // immediately set the right property to start the transition
+      }
+    </script>
+  </body>
+</html>
